@@ -7,11 +7,15 @@ import { CityService } from './world/services/city.service';
 import { CountryService } from './world/services/country.service';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot(),
-    WorldModule
+    WorldModule,
+    UsersModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],

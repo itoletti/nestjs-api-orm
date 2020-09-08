@@ -5,7 +5,7 @@ import { CityDTO } from '../dto/City.DTO';
 @Controller('city')
 export class CityController {
     constructor(
-        private cityService: CityService
+        private cityService: CityService,
     ) { }
   
     @Get()

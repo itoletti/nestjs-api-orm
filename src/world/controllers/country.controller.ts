@@ -5,7 +5,7 @@ import { CountryDTO } from '../dto/country.DTO';
 @Controller('country')
 export class CountryController {
     constructor (
-        private countryService: CountryService
+        private countryService: CountryService,
     ) {}
 
     @Get()
